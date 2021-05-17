@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix Sentiment Analysis</title>
+
+    </head>
+
+    <body>
+        <h1>Netflix Sentiment Analysis</h1>
+        <h3>Classifies if a movie review is positive or negative</h3>
+
+        <form action="{{url_for('Classify')}}" method="POST">
+            <input type="text" name="Review" placeholder="Enter a random review" size="160" required="required"/>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+
+
+        </form>
+
+        <br>
+        <br>
+        {{classify_text}}
+
+    </body>
+</html>
